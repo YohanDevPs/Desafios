@@ -1,4 +1,4 @@
-package string.kyu8;
+package desafios.kyu8;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package string.kyu7;
+package desafios.kyu7;
 
 /**
 DESCRIPTION:
