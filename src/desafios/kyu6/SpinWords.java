@@ -1,7 +1,5 @@
 package desafios.kyu6;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -24,31 +22,6 @@ public class SpinWords {
 
 
     public static String spinWords(String sentence) {
-        var arrays = sentence.split(" ");
-        List<String> list = new ArrayList<>();
-
-        for (String ls : arrays) {
-            if (ls.length() < 5) {
-                list.add(ls);
-            } else {
-                list.add(new StringBuilder(ls).reverse().toString());
-            }
-        }
-
-        String reversedSentence = "";
-        int i = 0;
-        for (String s : list) {
-            if(i == 0) {
-                reversedSentence += s;
-            }else {
-                reversedSentence += " " + s;
-            }
-            i++;
-        }
-        return reversedSentence;
-    }
-
-    public static String betterSolution(String sentence) {
         return Stream.of(sentence.split(" "))
                 .map(c -> c.length() >= 5 ? new StringBuilder(c).reverse() : c)
                 .collect(Collectors.joining(" "));
