@@ -1,4 +1,4 @@
-package desafios.kyu7;
+package desafios.kyu7.theOffice;
 
 import java.util.Arrays;
 
