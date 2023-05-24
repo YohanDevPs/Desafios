@@ -1,0 +1,9 @@
+
+u	java:S135 "YReduce the total number of break and continue statements in this loop to use at most one.(“Œ´8‘¹ø0
+9
+java:S1643#"Use a StringBuilder instead.(‹‹ÆÃ8’¹ø0
+9
+java:S1643*"Use a StringBuilder instead.(„ıôº8’¹ø0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¯³¤ëşÿÿÿÿ8¹ø0
+I
+java:S1481",Remove this unused "numbers" local variable.(¢¨¹“8¡¹ø0
