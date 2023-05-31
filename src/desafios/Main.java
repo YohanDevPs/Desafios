@@ -1,13 +1,15 @@
 package desafios;
 
-import desafios.kyu7.Sator;
+import desafios.kyu5.Checker;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Sator.isSatorSquare(new char[][]{{'P', 'E', 'R'},
-				{'E', 'V', 'E'},
-				{'R', 'E', 'P'}});
+		System.out.println(Checker.isSolved(new int[][] {
+				{0, 2, 2},
+				{1, 1, 1},
+				{0, 2, 0}
+		}));
 	}
 }
 
