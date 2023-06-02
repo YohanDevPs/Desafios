@@ -95,3 +95,15 @@ w
 G.idea/sonarlint/issuestore/1/0/10a03f31c4dce92cb371e761ce9429428bb6c176,0\3\030ed2ccb712537825891dfda283154162e458a8
 Å
 Q.idea/sonarlint/securityhotspotstore/3/d/3db17b1f79369c194e9ecafc4412429d2ee6b095,8\7\87b17b4b0617f103ba60a5c6d9cccfe829effd25
+[
++src/desafios/kyu7/RemoveDuplicateWords.java,3\a\3ab2dd0dbf88842ef2d8b2745e27323c97e4335f
+_
+/src/desafios/kyu7/theOffice/entitie/Person.java,d\7\d7c4480409024d153661341c0a27d81bf62d9559
+T
+$src/desafios/kyu7/SumOddNumbers.java,6\b\6b8d23beb6c427289c44a035517ebed68cd6099a
+[
++src/desafios/kyu7/theOffice/TheOfficeI.java,b\a\ba91646e00be1625873c9966bba5e9a56338b412
+L
+src/desafios/kyu7/Sator.java,9\4\944f6e32094414888b7c5973e1c4c9457310d3dc
+\
+,src/desafios/kyu7/theOffice/TheOfficeII.java,a\5\a54eb46fba8ef81c2ba1e484ba076f9a4c11cd11
