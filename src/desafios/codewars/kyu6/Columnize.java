@@ -1,4 +1,4 @@
-package desafios.kyu6;
+package desafios.codewars.kyu6;
 
 /*
 You are given an array of strings that need to be spread among N columns. Each column's width should be the same as the

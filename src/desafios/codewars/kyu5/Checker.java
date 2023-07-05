@@ -1,4 +1,4 @@
-package desafios.kyu5;
+package desafios.codewars.kyu5;
 
 import java.util.ArrayList;
 import java.util.Arrays;
