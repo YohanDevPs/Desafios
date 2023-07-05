@@ -1,4 +1,4 @@
-package desafios.kyu6;
+package desafios.codewars.kyu6;
 
 /*
 

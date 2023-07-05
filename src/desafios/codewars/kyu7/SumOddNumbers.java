@@ -1,4 +1,4 @@
-package desafios.kyu7;
+package desafios.codewars.kyu7;
 
 //Given the triangle of consecutive odd numbers:
 //

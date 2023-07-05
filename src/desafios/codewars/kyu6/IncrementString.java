@@ -1,4 +1,4 @@
-package desafios.kyu6;
+package desafios.codewars.kyu6;
 
 /**
 Your job is to write a function which increments a string, to create a new string.

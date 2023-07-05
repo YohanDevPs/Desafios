@@ -1,4 +1,4 @@
-package desafios.kyu7.theOffice;
+package desafios.codewars.kyu7.theOffice;
 
 import java.util.HashMap;
 import java.util.Map;

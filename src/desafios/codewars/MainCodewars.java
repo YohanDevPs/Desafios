@@ -1,8 +1,8 @@
-package desafios;
+package desafios.codewars;
 
-import desafios.kyu6.Columnize;
+import desafios.codewars.kyu6.Columnize;
 
-public class Main {
+public class MainCodewars {
 
 	public static void main(String[] args) {
 		String[] input = { "", "12", "123", "", "12345", "" };

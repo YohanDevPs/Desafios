@@ -1,4 +1,4 @@
-package desafios.kyu7.theOffice.entitie;
+package desafios.codewars.kyu7.theOffice.entitie;
 
 public class Person {
     public final String name;    // team memnber's name
