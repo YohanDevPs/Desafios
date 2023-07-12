@@ -1,64 +1,80 @@
 package desafios.hackerrank;
 
+/*
+Java's BigDecimal class can handle arbitrary-precision signed decimal numbers. Let's test your knowledge of them!
+
+Given an array, s, of n real number strings, sort them in descending order — but wait, there's more! Each number must be
+printed in the exact same format as it was read from stdin, meaning that  is printed as , and  is printed as . If two numbers
+represent numerically equivalent values (e.g., ), then they must be listed in the same order as they were received as input).
+
+Complete the code in the unlocked section of the editor below. You must rearrange array 's elements according to the instructions above.
+
+Input Format
+
+The first line consists of a single integer, , denoting the number of integer strings.
+Each line  of the  subsequent lines contains a real number denoting the value of .
+
+Constraintsa
+
+Each  has at most  digits.
+Output Format
+
+Locked stub code in the editor will print the contents of array  to stdout. You are only responsible for reordering the array's elements.
+
+Sample Input
+
+9
+-100
+50
+0
+56.6
+90
+0.12
+.12
+02.34
+000.000
+Sample Output
+
+90
+56.6
+50
+02.34
+0.12
+.12
+0
+000.000
+-100
+ */
+
+
+import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Scanner;
 
 public class MainRacker {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
 
+        List<String> numbers = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            String number = scanner.nextLine();
+            numbers.add(number);
+        }
 
-
-
-
-    }
-
-    public String betterCompression (String s) {
-        var list = s.toCharArray();
-        var letters = extractLetters(s);
-        var repeatedLetter =  encontrarLetraRepetida(s);
-
-        int sum = 0;
-        for (int i = 0; i < list.length; i++) {
-            if(list[i] == repeatedLetter) {
-               sum += list[i+1];
-
-               var result = Character.compare(list[i], repeatedLetter);
-               if(result > 0) {
-
-               }
+        numbers.sort((s1, s2) -> {
+            BigDecimal num1 = new BigDecimal(s1);
+            BigDecimal num2 = new BigDecimal(s2);
+            int compareResult = num2.compareTo(num1);
+            if (compareResult == 0) {
+                return numbers.indexOf(s1) - numbers.indexOf(s2);
             }
+            return compareResult;
+        });
+
+        for (String number : numbers) {
+            System.out.println(number);
         }
-
-
-        return null;
-    }
-    public static List<String> extractLetters(String input) {
-        List<String> leters = new ArrayList<>();
-        Pattern pattern = Pattern.compile("[A-Za-z]");
-        Matcher matcher = pattern.matcher(input);
-
-        while (matcher.find()) {
-            leters.add(matcher.group());
-        }
-
-        return leters;
-    }
-
-    public static char encontrarLetraRepetida(String input) {
-        Map<Character, Integer> contadorLetras = new HashMap<>();
-
-        for (char letra : input.toCharArray()) {
-            contadorLetras.put(letra, contadorLetras.getOrDefault(letra, 0) + 1);
-
-            if (contadorLetras.get(letra) > 1) {
-                return letra;
-            }
-        }
-
-        return '\0';
     }
 }
